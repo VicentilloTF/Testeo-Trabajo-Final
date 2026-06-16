@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Acreditación y Arancel</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="style.css" rel="stylesheet"/>
+  
+    </head>
+    <body>
+        <nav>
+            <div>
+                <span>
+                    
+					 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32" fill="#e33e1b">
+<title>54_North_v15</title>
+<path d="M72.86,55.07V92.83a1.53,1.53,0,0,1-1.6,1.48H54.9a2.82,2.82,0,0,1-2.21-1.48L40.76,65.53v27.3a1.53,1.53,0,0,1-1.6,1.48H30.8a1.43,1.43,0,0,1-1.48-1.48V55.07a1.43,1.43,0,0,1,1.48-1.48H47.16a3,3,0,0,1,2.33,1.48L61.42,82.62V55.07a1.43,1.43,0,0,1,1.48-1.48h8.36A1.53,1.53,0,0,1,72.86,55.07ZM51.09,35.14,30.55,46.83V42.52L51.09,6.61,71.63,42.52v4.31Z"></path>
+</svg>
+					
+                    Broadcast
+                </span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
+        </nav>
+        
+        <header>
+            <img src="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/cdn/images/crown.jpg"/>
+            <h3>DISEÑO EN CHILE</h3>
+            <h1>Acreditación y Arancel</h1>
+            <h2>Una correlación débil en el mercado de la educación superior</h2>
+            <address>Por <a href="#">Nombre Apellido</a>, <a href="#">Gastón Meneses</a> y <a href="#">Felipe Cortez</a></address>
+            <time>Publicado el 26 de mayo, 2026 06:00 p.m. GMT-4</time>
+        </header>
+
+        <main id="contenedor">
+
+            <p>El catálogo de electivos de Diseño UCH agrupa su oferta en cuatro grandes áreas temáticas: Lenguajes Visuales y Narrativas, Gestión y Fabricación Avanzada, Territorios y Ciudadanías, y Gestión Estratégica y Sistemas Complejos. Cada una de estas áreas reúne asignaturas pensadas desde distintos enfoques disciplinares, pero no todas están igualmente disponibles para los estudiantes de ambas menciones.</p>
+
+
+            <h4>¿Cómo se distribuyen los electivos de cada área temática entre las menciones Industrial y de Servicios, Visual y Multimedial, y las compartidas por ambas?</h4>
+
+            <p>En el siguiente gráfico podemos ver la respuesta.</p>
+
+            <figure>
+                <canvas id="dispersion"></canvas>
+                <figcaption>
+                   Cada grupo de barras representa un área temática del catálogo. Las tres barras de cada grupo indican cuántos electivos de esa área pertenecen a la Mención I y S, a la Mención V y M, o están disponibles para ambas menciones.
+                </figcaption>
+		
+            </figure>
+
+            <p>Para visualizar patrones en estructuras complejas, los <a href="https://datavizcatalogue.com/ES/metodos/diagrama_de_dispersion.html" target="_blank">diagramas de distribución</a> resultan idóneos. Al proyectar una colección de puntos mediante coordenadas cartesianas, el cruce de las variables en los ejes horizontal y vertical permite detectar la presencia y fuerza de una correlación entre ambas.</p>
+
+            <p>Al trazar una línea de mejor ajuste entre el programa de menor costo y acreditación básica (Diseño de Interiores y Ambientes en la <small>UNIACC</small>) hasta la opción de mayor costo y acreditación (Diseño en la <small>PUC</small>), se observa una pendiente ascendente en la distribución de los puntos. Si bien esto sugiere una correlación positiva, donde un mayor número de años de acreditación tiende a coincidir con aranceles más altos, la fuerza de correlación de débil y los valores atípicos son varios.</p>
+
+            <h4>¿Cuántas carreras con gratuidad existen por región en Chile?</h4>
+			 <figure>
+                <canvas id="otro"></canvas>
+                <figcaption>
+
+            <p><em>El gráfico de barras es el método canónico para comparar magnitudes entre categorías discretas, siendo superior a un mapa cuando el objetivo es la comparación numérica precisa más que la distribución geográfica.</p>
+
+            <p>Las regiones del norte presentan los aranceles más altos, mientras que Antofagasta y Biobío tienen los más bajos, lo que sugiere una paradoja: las zonas con menor oferta de carreras con gratuidad también tienden a tener costos más elevados, profundizando las barreras de acceso fuera de la Región Metropolitana.</p>
+					
+            
+            <h5>Fuentes</h5>
+            <p>Nombre; Nombre; Nombre</p>
+        </main>
+
+        <footer>
+            <div>
+                <a href="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/" target="_blank"
+                    >Inspirado en Reuters</a
+                >
+                <a href="https://github.com/profesorfaco/troncal">Diseño y visualización de información</a>
+            </div>
+        </footer>
+<canvas id="dispersion"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('dispersion').getContext('2d');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [
+        'Lenguajes Visuales',
+        'Gestión y Fabricación',
+        'Territorios y Ciudadanías',
+        'Gestión Estratégica'
+      ],
+      datasets: [
+        {
+          label: 'Mención I y S',
+          data: [0, 16, 5, 3],
+          backgroundColor: '#E07B54'
+        },
+        {
+          label: 'Mención V y M',
+          data: [13, 0, 2, 9],
+          backgroundColor: '#5B8DB8'
+        },
+        {
+          label: 'Ambas menciones',
+          data: [6, 2, 12, 7],
+          backgroundColor: '#6DBF8A'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top'
+        }
+      },
+      scales: {
+        x: {
+          stacked: false
+        },
+        y: {
+          stacked: false,
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'N° de electivos'
+          }
+        }
+      }
+    }
+  });
+</script>
+    </body>
+</html>
