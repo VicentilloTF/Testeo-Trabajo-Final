@@ -252,3 +252,66 @@
                 padding-top: 0.75rem;
                 letter-spacing: 0.1rem;
             }
+/* ── Tabla de electivos ── */
+
+input {
+    border: 0.1rem solid var(--accent);
+    padding: 0.5rem 1rem;
+    font-family: var(--sans);
+    font-size: 0.875rem;
+    color: var(--color-text);
+    outline: none;
+    margin: 1rem 0 1.5rem;
+    width: 100%;
+    display: block;
+}
+
+input::placeholder {
+    color: var(--color-muted);
+}
+
+input:focus {
+    border-color: var(--color-text);
+}
+
+div#contenedordetabla {
+    overflow-x: auto;
+    font-size: 0.875rem;
+    margin: 0 -1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 3rem;
+    font-family: var(--sans);
+}
+
+thead {
+    background: var(--accent);
+    color: white;
+}
+
+tbody {
+    color: var(--color-text);
+}
+
+td, th {
+    border: 1px solid var(--border);
+    padding: 0.75rem;
+}
+
+th:nth-child(1), td:nth-child(1),
+th:nth-child(4), td:nth-child(4) {
+    text-align: center;
+}
+
+td:nth-child(1) {
+    font-weight: 700;
+}
+
+td:nth-child(3) {
+    font-style: italic;
+    color: var(--color-muted);
+}
