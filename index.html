@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Electivos UChile</title>
+        <title>Acreditación y Arancel</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="style.css" rel="stylesheet"/>
@@ -31,16 +31,16 @@
         <header>
             <img src="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/cdn/images/crown.jpg"/>
             <h3>DISEÑO EN CHILE</h3>
-            <h1>Electivos UChile</h1>
-            <h2>Análisis de la oferta de electivos en Diseño UCH a partir de su distribución por mención, carga crediticia y agrupación temática, para identificar vacíos y concentraciones en el catálogo curricular.
-</h2>
+            <h1>Acreditación y Arancel</h1>
+            <h2>Una correlación débil en el mercado de la educación superior</h2>
             <address>Por <a href="#">Nombre Apellido</a>, <a href="#">Gastón Meneses</a> y <a href="#">Felipe Cortez</a></address>
             <time>Publicado el 26 de mayo, 2026 06:00 p.m. GMT-4</time>
         </header>
 
         <main id="contenedor">
 
-            <p>El catálogo de electivos de Diseño UCH puede ser dividido en cuatro grandes áreas temáticas: Lenguajes Visuales y Narrativas, Gestión y Fabricación Avanzada, Territorios y Ciudadanías, y Gestión Estratégica y Sistemas Complejos. Cada una de estas áreas reúne asignaturas pensadas desde distintos enfoques disciplinares, pero no todas están igualmente disponibles para los estudiantes de ambas menciones.</p>
+            <p>El catálogo de electivos de Diseño UCH agrupa su oferta en cuatro grandes áreas temáticas: Lenguajes Visuales y Narrativas, Gestión y Fabricación Avanzada, Territorios y Ciudadanías, y Gestión Estratégica y Sistemas Complejos. Cada una de estas áreas reúne asignaturas pensadas desde distintos enfoques disciplinares, pero no todas están igualmente disponibles para los estudiantes de ambas menciones.</p>
+
 
             <h4>¿Cómo se distribuyen los electivos de cada área temática entre las menciones Industrial y de Servicios, Visual y Multimedial, y las compartidas por ambas?</h4>
 
@@ -53,12 +53,13 @@
                 </figcaption>
 		
             </figure>
-
-            <p>Al trazar una línea de mejor ajuste entre el programa de menor costo y acreditación básica (Diseño de Interiores y Ambientes en la <small>UNIACC</small>) hasta la opción de mayor costo y acreditación (Diseño en la <small>PUC</small>), se observa una pendiente ascendente en la distribución de los puntos. Si bien esto sugiere una correlación positiva, donde un mayor número de años de acreditación tiende a coincidir con aranceles más altos, la fuerza de correlación de débil y los valores atípicos son varios.</p>
-			<p>El gráfico anterior mostró cómo se distribuyen los electivos por mención dentro de cada área temática. Sin embargo, ese análisis solo cubre una parte del catálogo: el Paso 3 no clasificó la totalidad de los 181 electivos disponibles, sino que tomó muestras ejemplificadoras para representar cada subgrupo, lo que dejó solo 75 electivos efectivamente asignados a una de las cuatro áreas temáticas.
-Esto significa que 109 electivos, que representa el 60% del catálogo, quedaron sin ninguna agrupación temática formal. De ellos, 44 pertenecen a la Mención Industrial y de Servicios, 41 a la Mención Visual y Multimedial, y 24 son electivos disponibles para ambas menciones.
-Este vacío de información es relevante para el análisis: no solo existe un desbalance entre las áreas que sí fueron definidas, sino que la mayoría de la oferta real del catálogo queda completamente fuera de cualquier clasificación temática, lo que limita cuánto se puede concluir sobre la estructura completa de la oferta.
-El siguiente gráfico visualiza, uno por uno, los 75 electivos que sí cuentan con una agrupación lógica, mostrando a qué mención y a qué área temática pertenece cada uno individualmente.</p>
+			<p>El gráfico anterior mostró cómo se distribuyen los electivos por mención dentro de cada área temática. Sin embargo, ese análisis solo cubre una parte del catálogo, por lo que no se clasificó la totalidad de los 171 electivos disponibles, sino que tomó muestras ejemplificadoras para representar cada subgrupo, lo que dejó solo 75 electivos efectivamente asignados a una de las cuatro áreas temáticas.</p>
+			
+<p>Esto significa que 109 electivos, que representa el 60% del catálogo, quedaron sin ninguna agrupación temática formal. De ellos, 44 pertenecen a la Mención Industrial y de Servicios, 41 a la Mención Visual y Multimedial, y 24 son electivos disponibles para ambas menciones.</p>
+			
+<p>Este vacío de información es relevante para el análisis: no solo existe un desbalance entre las áreas que sí fueron definidas, sino que la mayoría de la oferta real del catálogo queda completamente fuera de cualquier clasificación temática, lo que limita cuánto se puede concluir sobre la estructura completa de la oferta.</p>
+			
+<p>El siguiente gráfico visualiza, uno por uno, los 75 electivos que sí cuentan con una agrupación lógica, mostrando a qué mención y a qué área temática pertenece cada uno individualmente.</p>
             <h4>¿A qué mención y a qué agrupación temática pertenece cada uno de los 75 electivos clasificados?</h4>
 			 <figure>
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,6 +84,51 @@ El siguiente gráfico visualiza, uno por uno, los 75 electivos que sí cuentan c
 	.st14{font-size:10px;}
 	.st15{fill:#7B7B7B;}
 	.st16{font-size:12px;}
+	/* Tabla de electivos */
+div#contenedordetabla {
+    overflow-x: auto;
+    font-size: 90%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+thead {
+    background: var(--color-iluminadisimo);
+    color: var(--color-oscuro);
+}
+
+tbody { color: var(--color-normal); }
+
+td, th {
+    border: 1px solid var(--color-normal);
+    padding: 0.75rem;
+}
+
+th:nth-child(1), td:nth-child(1),
+th:nth-child(4), td:nth-child(4) { text-align: center; }
+
+td:nth-child(1) { color: var(--color-oscuro); font-weight: 800; }
+td:nth-child(3) { font-style: italic; }
+
+input {
+    border: 0.1rem solid var(--color-iluminado);
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--color-oscuro);
+    outline: none;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: block;
+}
+
+input::placeholder { color: var(--color-iluminado); }
+input:focus { border-color: var(--color-normal); }
 </style>
 <g>
 	<rect x="809.1" y="203.6" width="5" height="57.6"/>
@@ -609,15 +655,45 @@ El siguiente gráfico visualiza, uno por uno, los 75 electivos que sí cuentan c
 	<text transform="matrix(1 0 0 1 741.0603 198.6378)" class="st15 st13 st16">Grupo Temático (Paso 3)</text>
 	<text transform="matrix(1 0 0 1 7.2937 201.1378)" class="st15 st13 st16">Mención</text>
 </g>
-</svg>
+</svg>	
+			</figure>
+				<p>El diagrama aluvial resultó la forma más adecuada de visualizar esta información porque permite seguir cada uno de los 75 electivos de forma individual a través de dos dimensiones a la vez, mención y grupo temático, sin perder el detalle de los casos particulares, incluyendo aquellos que cruzan más de una agrupación. A diferencia de un gráfico de barras, donde los electivos se funden en una cifra agregada, el aluvial conserva el origen y destino de cada hebra, haciendo visibles tanto los patrones generales como las excepciones.</p>
+			
+				<p>Al observar el gráfico, se hace evidente que la categoría más numerosa entre los electivos clasificados es la de Ambas menciones, aunque por un margen pequeño respecto a las otras dos: 27 asignaciones corresponden a esta categoría, frente a 24 de la Mención I y S y 24 de la Mención V y M. Cabe señalar que entre estos 27 se encuentra uno de los tres electivos transversales del catálogo, asignado simultáneamente a Gestión y Fabricación Avanzada y Territorios y Ciudadanías, por lo que aparece duplicado en el conteo del gráfico anterior, que agrupa la información a nivel de las cuatro grandes áreas temáticas.</p>
+			
+                <p>Dado que esta categoría agrupa al subconjunto más amplio, decidimos profundizar en su composición interna, diseccionando estos electivos transversales según los subgrupos de las mismas áreas temáticas, para entender con mayor precisión en qué áreas se concentra la oferta compartida entre menciones. En este desglose por subgrupo, el electivo transversal ya no se duplica ya que pertenece a un único subgrupo específico dentro de cada área, lo que deja un total de 26 electivos distribuidos en 9 de los 12 subgrupos posibles.</p>
 
-            <p><em></p>
+				<p>También se puede rescatar que 3 de estos 12 subgrupos no contienen ningún electivo de Ambas menciones. Es decir, hay áreas temáticas específicas del catálogo donde la oferta compartida entre menciones es completamente inexistente, lo que sugiere que la transversalidad entre Industrial/Servicios y Visual/Multimedial no está distribuida de forma pareja entre todos los subgrupos, sino concentrada en ciertos nichos temáticos como Diseño Social y Metodologías Inclusivas, los cuales cuentan con 5 electivos mientras otros quedan completamente fuera de ese cruce disciplinar.</p>
 
-            <p></p>
-					
-            
+			<h4>¿En qué subgrupos de las áreas temáticas se concentra la oferta de electivos disponibles para ambas menciones, y cuáles quedan sin ninguna representación?</h4>
+            <figure>
+				<h4>Dentro de los electivos disponibles para ambas menciones, ¿en qué subrgrupo se concentran y cuáles están menos representadas?</h4>
+                <canvas id="otro"></canvas>
+                <figcaption>
+                   Las barras muestran como se distribuyen los electivos de ambas menciones entre las 6 agupaciones lógicas
+                </figcaption>
+		
+            </figure>
+			
             <h5>Fuentes</h5>
             <p>Nombre; Nombre; Nombre</p>
+
+				<h4>Catálogo de electivos</h4>
+<input type="text" id="elInput" placeholder="Filtrar electivos…" />
+<div id="contenedordetabla">
+    <table>
+        <thead>
+            <tr>
+                <th>Electivo</th>
+                <th>Mención</th>
+                <th>Subgrupo</th>
+                <th>Créditos</th>
+                <th>Área Temática</th>
+            </tr>
+        </thead>
+        <tbody id="este"></tbody>
+    </table>
+</div> 
         </main>
 
         <footer>
@@ -682,193 +758,77 @@ El siguiente gráfico visualiza, uno por uno, los 75 electivos que sí cuentan c
         }
       }
     }
- <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Proyectos de Título</title>
-        <style>
-           *,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
-
-:root {
-    --color-oscurisimo: #591414;
-    --color-oscuro:#911d1d;
-    --color-normal: #8c3434;
-    --color-iluminado: #b31919;
-    --color-iluminadisimo: #d92727;
-    --fuente: "Source Code Pro", monospace;
-}
-
-body {
-    font-family: var(--fuente);
-    color: var(--color-normal);
-    text-align: center;
-    font-size: 100%;
-}
-
-a {
-    color: var(--color-oscuro);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--color-oscurisimo);
-    text-decoration: underline;
-}
-div#contenedor {
-    margin: 1rem auto;
-    width: 90%;
-    max-width: 980px;
-}
-
-h1 {
-    margin: 1rem 0;
-    font-weight: 400;
-    font-size: calc(100% + 3vw + 3vh);
-}
-
-h2 {
-    margin: 3rem 0;
-    font-weight: 400;
-    letter-spacing: 0.25rem;
-    font-size: calc(100% + 1vw + 1vh);
-    color: var(--color-oscuro);
-}
-
-input {
-    border: 0.1rem solid var(--color-iluminado);
-    padding: 0.5rem 1rem;
-    font-family: inherit;
-    font-size: 15px;
-    color: var(--color-oscuro);
-    outline: none;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    display: block;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16"><path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/></svg>');
-    background-repeat: no-repeat;
-    background-size: 1rem;
-    background-position: 99% center;
-}
-
-input::placeholder {
-    color: var(--color-iluminado);
-}
-
-input:focus {
-    border-color: var(--color-normal);
-}
-
-div#contenedordetabla {
-    overflow-x: auto;
-    font-size: 90%;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    margin-bottom: 3rem;
-}
-
-thead {
-    background: var(--color-iluminadisimo);
-    color: var(--color-oscuro);
-}
-
-tbody {
-    color: var(--color-normal);
-}
-
-td,
-th {
-    border: 1px solid var(--color-normal);
-    padding: 0.75rem;
-}
-
-th:nth-child(1),
-td:nth-child(1),
-th:nth-child(4),
-td:nth-child(4) {
-    text-align: center;
-}
-
-td:nth-child(2) {
-    color: var(--color-oscuro);
-    font-weight: 800;
-}
-
-td:nth-child(3) {
-    font-style: italic;
-}
-        </style>
-    </head>
-    <body>
-        <div id="contenedor">
-            <h1>₍^ >ヮ<^₎ .ᐟ.ᐟ</h1>
-            <h2>Proyectos de Título</h2>
-
-            <input type="text" id="elInput" placeholder="Filtrar titulos…" />
-            <div id="contenedordetabla">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Titulad@</th>
-                            <th>Proyecto</th>
-                            <th>Nota</th>
-                            <th>Categoría</th>
-                            <th>Prof. Guía</th>
-                        </tr>
-                    </thead>
-                    <tbody id="este"></tbody>
-                </table>
-            </div>
-          
-            <small>Diseño y visualización de información</small>
-        </div>
-
-        <script>
-            const t = document.querySelector("#este");
-            const URL = "https://api.myjson.online/v1/records/2ee30830-2124-4382-b707-1a89ede13ea8";
-
-            fetch(URL)
-                .then((respuesta) => {
-                    if (!respuesta.ok) {
-                        throw new Error("Error HTTP: " + respuesta.status);
-                    }
-                    return respuesta.json();
-                })
-                .then((datos) => {
-                    var trabajo = datos.data;
-                    console.log(trabajo);
-                    trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.name}</td><td>${x.title}</td><td>${x.grade}</td><td>${x.category}</td><td>${x.tutor}</td></tr>`;
-                    });
-                })
-                .catch((error) => {
-                    console.error("Algo salió mal:", error);
-                });
-
-            function sinAcentos(str) {
-                return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            }
-
-            document.getElementById("elInput").addEventListener("keyup", function () {
-                const valor = sinAcentos(this.value.toLowerCase());
-                document.querySelectorAll("#este tr").forEach(function (fila) {
-                    fila.style.display = sinAcentos(fila.textContent.toLowerCase()).includes(valor) ? "" : "none";
-                });
-            });
-      
   });
+</script>
+		<canvas id="otro"></canvas>
+
+<script>
+  const ctx2 = document.getElementById('otro').getContext('2d');
+
+  new Chart(ctx2, {
+    type: 'bar',
+    data: {
+      labels: [
+        'Diseño Social y Metodologías Inclusivas',
+        'Patrimonio e Identidades Locales',
+        'Estrategia y Gestión de Valor',
+        'Percepción y Semiótica',
+        'Experimentación y Crítica',
+        'Hábitat y Diseño Regenerativo',
+        'Ética y Políticas del Diseño',
+        'Biomateriales y Ciclo de Vida',
+        'Interacción y Experiencia'
+      ],
+      datasets: [{
+        label: 'Electivos de Ambas Menciones (Paso 3)',
+        data: [5, 4, 4, 3, 3, 3, 2, 1, 1],
+        backgroundColor: '#6DBF8A'
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          title: { display: true, text: 'N° de electivos' }
+        }
+      }
+    }
+  });
+</script>
+		<script>
+    const t = document.querySelector("#este");
+    const URL = "https://api.myjson.online/v1/records/79b42724-6936-4c77-a4b6-0f6d059162f2";
+
+    fetch(URL)
+        .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(datos => {
+            datos.data.forEach(x => {
+                t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}">
+                    <td>${x.Electivo}</td>
+                    <td>${x.Mención}</td>
+                    <td>${x.Subgrupo}</td>
+                    <td>${x.Créditos}</td>
+                    <td>${x["Área Temática"]}</td>
+                </tr>`;
+            });
+        })
+        .catch(e => console.error("Error:", e));
+
+    function sinAcentos(str) {
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+
+    document.getElementById("elInput").addEventListener("keyup", function () {
+        const valor = sinAcentos(this.value.toLowerCase());
+        document.querySelectorAll("#este tr").forEach(fila => {
+            fila.style.display = sinAcentos(fila.textContent.toLowerCase()).includes(valor) ? "" : "none";
+        });
+    });
 </script>
     </body>
 </html>
- 
